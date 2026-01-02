@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +41,20 @@
 </script>
 </head>
 <body>
+    <!-- Hidden form for Netlify Bot detection -->
+    <form name="booking" data-netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="text" name="discord" />
+      <select name="type">
+        <option value="short">short</option>
+        <option value="long">long</option>
+      </select>
+      <input type="url" name="footageLink" />
+      <input type="date" name="deadline" />
+      <input type="text" name="budget" />
+      <textarea name="description"></textarea>
+    </form>
+
     <div id="root"></div>
 </body>
 </html>
